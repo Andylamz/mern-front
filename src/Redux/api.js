@@ -1,10 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
+const baseUrl = import.meta.env.VITE_API_BASE_URL;
 const api = createApi({
   reducerPath: "myapi",
   baseQuery: fetchBaseQuery({
     // Backend URL
-    baseUrl: "http://localhost:5000",
+    baseUrl: baseUrl,
   }),
   tagTypes: ["Product"],
   endpoints: (builder) => ({
