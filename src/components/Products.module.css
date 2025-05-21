@@ -30,3 +30,14 @@
   color: rgb(246, 142, 68);
   margin-top: 20rem;
 }
+
+@media (max-width: 900px) {
+  .productsBody {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .productsBody {
+    grid-template-columns: 1fr;
+  }
+}

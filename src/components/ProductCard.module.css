@@ -36,3 +36,15 @@
 .buttons > i {
   cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardContainer {
+    width: 28rem;
+  }
+}
