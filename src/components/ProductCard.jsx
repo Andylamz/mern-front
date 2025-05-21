@@ -17,9 +17,7 @@ function ProductCard({ product }) {
 
   async function handleDeleteItem() {
     try {
-      console.log(product._id);
-      const result = await deleteProduct(product._id).unwrap();
-      console.log(result);
+      await deleteProduct(product._id).unwrap();
     } catch (err) {
       console.log(err.message);
       return { success: false, message: "Something went wrong" };
@@ -35,9 +33,8 @@ function ProductCard({ product }) {
       priceRef.current.value.trim() === ""
         ? product.price
         : priceRef.current.value;
-    console.log(name, price);
     try {
-      const result = await updateProduct({
+      await updateProduct({
         id: product._id,
         data: {
           name: name,
@@ -45,7 +42,6 @@ function ProductCard({ product }) {
         },
       }).unwrap();
       handleEditing();
-      console.log(result);
     } catch (err) {
       return { success: false, message: err.message };
     }
