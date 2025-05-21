@@ -71,7 +71,10 @@ function Create({ dark, setIsCreating }) {
             placeholder="Price"
             // value={newProduct.price || ""}
             onChange={(e) =>
-              setNewProduct({ ...newProduct, price: e.target.value })
+              setNewProduct({
+                ...newProduct,
+                price: Number(e.target.value).toFixed(2),
+              })
             }
           />
           <input
