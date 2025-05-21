@@ -52,3 +52,15 @@
   background-color: #f3b181;
   color: #040244;
 }
+
+@media (max-width: 600px) {
+  .formContainer {
+    width: 40rem;
+  }
+}
+@media (max-width: 430px) {
+  .formContainer {
+    width: 32rem;
+    padding: 2rem;
+  }
+}
