@@ -4,16 +4,24 @@
   align-items: center;
   font-size: 3.5rem;
   color: rgb(246, 142, 68);
-  margin-top: 2rem;
+  /* margin-top: 5rem; */
 }
 
 .button {
   padding: 0.4rem 1.6rem;
-  color: #ffffff;
   border: none;
-  background-color: #8684a6;
   cursor: pointer;
 }
+.dark {
+  background-color: #8684a6;
+  color: #ffffff;
+}
+
+.light {
+  background-color: rgb(246, 142, 68);
+  color: #ffffff;
+}
+
 .button:hover {
   transform: scale(1.2);
 }

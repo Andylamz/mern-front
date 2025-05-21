@@ -1,8 +1,37 @@
 * {
   font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  min-height: 100vh;
+  padding-top: 5rem;
+  height: 100%;
 }
 
 .container {
   width: 100rem;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80rem;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 60rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 40rem;
+  }
+}
+@media (max-width: 430px) {
+  .container {
+    width: 25rem;
+  }
 }

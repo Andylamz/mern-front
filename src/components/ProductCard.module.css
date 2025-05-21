@@ -1,0 +1,38 @@
+.cardContainer {
+  width: 28rem;
+  color: white;
+  font-size: 3rem;
+  background-color: rgb(246, 142, 68);
+  margin-top: 6rem;
+  border: 1px solid #040b18;
+  max-height: 36rem;
+}
+
+.imageContainer > img {
+  height: 20rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.descriptionContainer {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  gap: 1rem;
+  min-height: 358px;
+}
+.descriptionContainer input {
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.buttons > i {
+  cursor: pointer;
+}
