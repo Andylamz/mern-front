@@ -6,7 +6,8 @@ function Create({ dark, setIsCreating }) {
   const [newProduct, setNewProduct] = useState({
     name: "",
     price: "",
-    image: "",
+    image:
+      "https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg",
   });
   const [createNewProduct] = useCreateProductMutation();
   // Fetching data from backend with proper error and loading states

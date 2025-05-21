@@ -1,12 +1,27 @@
-# React + Vite
+# MERN Product Store - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend repo of Fullstack MERN product management app.
 
-Currently, two official plugins are available:
+Users can: - View a list of products - Add new products (with name, price, image) - Edit or Delete products - See a loading spinner during data fetching - Use the app on both desktop and mobile (responsive design)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
 
-## Expanding the ESLint configuration
+    - React + Vite
+    - Redux Toolkit + RTK Query
+    - CSS Modules
+    - Responsive Design (@media)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+    - 'useGetAllProductQuery' to fetch all products
+    - 'isLoading' flag shows spinner when fetching for product list
+    - 'useCreateProductMutation', 'useDeleteProductMutation', etc
+    - Clean modular components
+
+## Demo
+
+Fullstack Demo can be viewed [here](https://mern-fullstack-wkys.onrender.com)
+
+## Github
+
+Fullstack Repository can be view [here](https://github.com/Andylamz/mern-fullstack)
